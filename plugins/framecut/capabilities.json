@@ -1,0 +1,47 @@
+{
+  "schema": "framecore-capabilities/1",
+  "plugin": {
+    "name": "framecut",
+    "version": "0.1.0"
+  },
+  "entry_skill": "skills/framecut/SKILL.md",
+  "contract_versions": [
+    "1"
+  ],
+  "contract_schema": {
+    "path": "contracts/framecore-task.schema.json",
+    "sha256": "e7cc0f4e612395768e8c8c6cf2a033a555bc69b4c8ea5ca45c4db019a342897a"
+  },
+  "capabilities": [
+    {
+      "id": "framecut",
+      "kind": "built-in",
+      "launcher": "skills/framecut/SKILL.md",
+      "operations": [
+        "brief",
+        "analyze",
+        "transcribe",
+        "edit",
+        "captions",
+        "storyboard",
+        "render",
+        "review",
+        "export"
+      ],
+      "consent_required": [
+        "install of Python packages, FFmpeg or the Whisper model for this conversation",
+        "generative assets, uploads or paid services"
+      ],
+      "requirements": {
+        "no_code": "edit plan, storyboard and Edit Pack handoff only",
+        "code_execution": "Python 3.10+ with Pillow and FFmpeg/FFprobe (libass, libx264, AAC) for the edit and render",
+        "optional": "PyWhisperCpp with the multilingual Whisper tiny model for speech-to-text; OpenTimelineIO for the OTIO round-trip check",
+        "api_keys": "none"
+      },
+      "network": {
+        "default": "none",
+        "optional": "PyPI and the pinned Whisper model download, only after the user agrees"
+      }
+    }
+  ]
+}

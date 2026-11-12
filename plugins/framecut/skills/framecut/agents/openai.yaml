@@ -1,0 +1,7 @@
+interface:
+  display_name: "FrameCut"
+  short_description: "Edit, caption and finish your footage into a film"
+  default_prompt: "Use $framecut to establish the scope, analyze my footage, show the storyboard, edit and finish the video with captions and sound, review the result and deliver the files."
+
+policy:
+  allow_implicit_invocation: true

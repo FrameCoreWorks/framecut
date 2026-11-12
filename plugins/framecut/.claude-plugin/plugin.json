@@ -1,0 +1,21 @@
+{
+  "name": "framecut",
+  "version": "0.1.0",
+  "description": "Video editing from your footage to a finished film: analysis, transcription, cuts, captions and subtitles, mix, storyboard and render, with EDL/OTIO handoff. Works standalone or as Creative Studio's editing companion.",
+  "author": {
+    "name": "FrameCore Works"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "video-editing",
+    "captions",
+    "subtitles",
+    "ffmpeg",
+    "whisper",
+    "storyboard",
+    "edl",
+    "otio"
+  ],
+  "displayName": "FrameCut",
+  "repository": "https://github.com/FrameCoreWorks/framecut"
+}

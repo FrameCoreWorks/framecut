@@ -1,0 +1,38 @@
+{
+  "interface": {
+    "displayName": "FrameCut",
+    "shortDescription": "Edit your footage into a finished film",
+    "longDescription": "Edit your own footage into a finished, reviewed film: interview, media analysis, draft transcription with Whisper, cuts and highlights, J/L cuts, speed, freeze frames, framing per format, word-timed captions and subtitle files, music ducked under speech, loudness targets, a full storyboard before the final render, and EDL, OTIO and CSV handoff to an editor. Works standalone or as FrameCore Works Creative Studio's editing companion. Rendering needs code execution with Python, Pillow and FFmpeg.",
+    "developerName": "FrameCore Works",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Cut this recording into three 30-second vertical clips with captions.",
+      "Edit my footage into a 60-second film with music under the speech.",
+      "Add Polish subtitles to this video and check them."
+    ]
+  },
+  "name": "framecut",
+  "version": "0.1.0",
+  "description": "Video editing from your footage to a finished film: analysis, transcription, cuts, captions and subtitles, mix, storyboard and render, with EDL/OTIO handoff. Works standalone or as Creative Studio's editing companion.",
+  "author": {
+    "name": "FrameCore Works"
+  },
+  "keywords": [
+    "video-editing",
+    "captions",
+    "subtitles",
+    "ffmpeg",
+    "whisper",
+    "storyboard",
+    "edl",
+    "otio"
+  ],
+  "license": "Apache-2.0",
+  "skills": "./skills",
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/framecut/SKILL.md"
+    }
+  }
+}

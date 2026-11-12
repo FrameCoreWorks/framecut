@@ -1,0 +1,19 @@
+FrameCut
+Copyright 2026 FrameCore Works
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The edit engine (skills/framecut/assets/framecut/), the captions tool (skills/framecut/assets/captions/captions.py),
+the editor export (skills/framecut/scripts/edit_export.py) and all references are original FrameCore Works work.
+skills/framecut/assets/captions/render.py is a copy of FrameMotion's motion renderer and
+skills/framecut/assets/board/board_compose.py a copy of FrameCore Works Creative Studio's board composer, both
+FrameCore Works code under Apache-2.0, with their source hashes recorded beside them.
+
+Third-party components:
+
+- Fonts in skills/framecut/assets/fonts/ (Anton, Archivo, Bricolage Grotesque, Fraunces, Inter, Source Serif 4):
+  SIL Open Font License 1.1, built from google/fonts at commit bd8f81ddb5c74d5c8897b36ad88b440266245103; each family
+  folder keeps its OFL.txt with the copyright notice.
+
+Not bundled, installed only with the user's consent and used under their own licences: FFmpeg (LGPL/GPL builds of
+the host), PyWhisperCpp (MIT), the Whisper tiny model (MIT, ggerganov/whisper.cpp), OpenTimelineIO (Apache-2.0),
+Pillow (MIT-CMU). No Concat or OpenCut code is included; "OpenCut" names an editor handoff format only.
