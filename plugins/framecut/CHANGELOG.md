@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.1 (2026-11-13)
+
+- **Music for reels and social films** (owner decision 2026-11-13): a bed composed in code comes first, because platforms mute or claim library music even under CC BY; the user is warned before someone else's track is used; about -14 LUFS with the peak below -1 dB.
+- Installation guide: FrameCut's only marketplace is `framecut`; Creative Studio 1.180.0 installs it from there as a dependency; how to replace an older `framecut@framecore-works` copy. The Studio install route says which marketplaces to add first.
+- The readable hold rule is credited to FrameMotion's motion craft, not to Studio.
+- Repository check prints the end of a failing test's output.
+
 ## 0.1.0 (2026-11-12)
 
 First release of FrameCut, a complete standalone video editing plugin, which Creative Studio can also use as its editing companion.

@@ -11,7 +11,7 @@
       "displayName": "FrameCut",
       "source": "./plugins/framecut",
       "description": "Video editing from your footage to a finished film: analysis, transcription, cuts, captions and subtitles, mix, storyboard and render, with EDL/OTIO handoff. Works standalone or as Creative Studio's editing companion.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "category": "productivity"
     }
   ]

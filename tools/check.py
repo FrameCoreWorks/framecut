@@ -85,7 +85,10 @@ def main():
     for test in sorted((PLUGIN / 'tests').glob('*_test.py')):
         if fast and test.name not in FAST:
             continue
-        subprocess.run([sys.executable, str(test)], cwd=PLUGIN, check=True, capture_output=True)
+        run = subprocess.run([sys.executable, str(test)], cwd=PLUGIN, capture_output=True, text=True)
+        if run.returncode != 0:
+            print((run.stdout + run.stderr)[-4000:])
+            run.check_returncode()
         print(f'PASS {test.name}', flush=True)
     with tempfile.TemporaryDirectory() as temp:
         one, two = build(Path(temp) / 'one'), build(Path(temp) / 'two')

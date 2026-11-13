@@ -26,7 +26,7 @@ The request is the installation consent. The assistant follows the section for i
 /plugin install framecut@framecut
 ```
 
-The marketplace is named `framecut` and holds exactly this plugin. When Creative Studio's marketplace (`framecore-works`) also lists FrameCut, install it from one marketplace only; two installed copies both stay enabled, so remove one with `claude plugin uninstall`. A new session lists the skill as `framecut:framecut`.
+The marketplace is named `framecut` and holds exactly this plugin; it is FrameCut's only marketplace. Creative Studio (from 1.180.0) installs FrameCut from this marketplace as a dependency, so add it before installing Studio. An older `framecut@framecore-works` copy shows `failed to load` after Studio's update: remove it with `claude plugin uninstall framecut@framecore-works` and install `framecut@framecut`. A new session lists the skill as `framecut:framecut`.
 
 ## Claude apps (claude.ai, desktop)
 

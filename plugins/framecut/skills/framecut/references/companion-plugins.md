@@ -7,7 +7,7 @@ FrameCut needs no other plugin. The plugins below add a step it does better with
 | Animated titles, kinetic type, a logo ending, data animation inside the edit | native keyframes, animated titles and word-timed captions | FrameMotion (`framemotion:framemotion`) | designed motion rendered at the exact length and placed once on FrameCut's timeline |
 | Sound effects on cuts, loudness check, sound kits | FrameCut's mix, ducking and loudness targets | Earshot, built into FrameCore Works Toolbox | effects chosen by listening and measured loudness and peaks ([Earshot through Toolbox](#earshot-through-toolbox)) |
 | A designed transition that the cut really needs | `transition_style` (dips, wipes, slides) and crossfades | `gl-transitions` from Toolbox | licensed GLSL shader transitions with exact FFmpeg wiring |
-| Missing stills, b-roll pictures, music, ambience or sound effects | the user's own material | FrameCore Open Assets (`framecore-open-assets:open-assets`) | free files with verified licences and provenance ([Open Assets](#open-assets)) |
+| Missing stills, b-roll pictures, ambience or sound effects (music: see below) | the user's own material | FrameCore Open Assets (`framecore-open-assets:open-assets`) | free files with verified licences and provenance ([Open Assets](#open-assets)) |
 | Brief, script, copy, campaign or storyboard work around the edit | the [standalone brief](standalone-brief.md) | FrameCore Works Creative Studio | Studio leads the project and sends FrameCut the edit |
 
 ## Names and installation
@@ -16,7 +16,7 @@ Hosts list the same skill under different names: Claude and Codex plugins `<plug
 
 When a plugin is missing and the user agreed, install it through this host's route:
 
-- **Claude Code:** add the plugin's marketplace once, then install: `claude plugin marketplace add FrameCoreWorks/framemotion` and `claude plugin install framemotion@framemotion`; `FrameCoreWorks/framecore-works-toolbox` and `toolbox@framecore-works-toolbox` (an entry: `<entry>@framecore-works-toolbox`); `FrameCoreWorks/framecore-open-assets` and `framecore-open-assets@framecore-open-assets`; `FrameCoreWorks/framecore-works-creative-studio` and `framecore-work-creative-studio@framecore-works`. A new conversation lists the skill.
+- **Claude Code:** add the plugin's marketplace once, then install: `claude plugin marketplace add FrameCoreWorks/framemotion` and `claude plugin install framemotion@framemotion`; `FrameCoreWorks/framecore-works-toolbox` and `toolbox@framecore-works-toolbox` (an entry: `<entry>@framecore-works-toolbox`); `FrameCoreWorks/framecore-open-assets` and `framecore-open-assets@framecore-open-assets`; `FrameCoreWorks/framecore-works-creative-studio` and `framecore-work-creative-studio@framecore-works` (it needs the Toolbox, FrameMotion and FrameCut marketplaces added first and then brings those plugins itself). A new conversation lists the skill.
 - **Claude apps:** the user adds the repository as a marketplace under Customize > Plugins and turns the plugin on.
 - **Codex:** `codex plugin marketplace add <owner/repo>`, then `codex plugin add <name>@<marketplace>` with the same names.
 - **ChatGPT Work:** Plugin Creator saves the plugin from files read as text through the GitHub connector, following that repository's installation guide, never a ZIP from the user.
@@ -29,7 +29,9 @@ Earshot (sound analysis, procedural effects, sound kits and its bank) comes only
 
 ## Open Assets
 
-For missing stills, b-roll pictures, music, ambience or sound effects, offer FrameCore Open Assets before generated material: it searches official keyless sources, checks each file's licence and downloads it with provenance. Ingest the downloaded files like any source (hash, rights note) and keep the licence record with the delivery.
+For missing stills, b-roll pictures, ambience or sound effects, offer FrameCore Open Assets before generated material: it searches official keyless sources, checks each file's licence and downloads it with provenance. Ingest the downloaded files like any source (hash, rights note) and keep the licence record with the delivery.
+
+**Music for reels and social films** (owner decision 2026-11-13): platforms (Pinterest, YouTube, TikTok, Instagram, Facebook) detect other people's music and can mute the film or file a claim (Content ID) even when the track has a free licence such as CC BY. Prefer a music bed composed in code (FrameMotion's sound design when it is installed) and effects from code, with CC0 samples only where code cannot sound real. Before using a library track or the user's own pick of someone else's track, warn the user about muting or a claim; a licence alone does not prevent it. Mix to about -14 LUFS with the peak below -1 dB.
 
 ## FrameMotion inside an edit
 
