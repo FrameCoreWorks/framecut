@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.2 (2026-11-13)
+
+- **Captions readable on a phone** (owner test 2026-11-13): the renderer keeps captions at least 4.5 % of the frame height in a vertical film and 4 % in a landscape one, and reports `caption_size_raised` when a sequence asked for less; the readability reference says to shorten or split a cue instead of shrinking it.
+- **Whisper base for non-English speech**: first setup offers the pinned multilingual base model (SHA-256 recorded) next to tiny, because tiny garbles Polish words and word times.
+
 ## 0.1.1 (2026-11-13)
 
 - **Music for reels and social films** (owner decision 2026-11-13): a bed composed in code comes first, because platforms mute or claim library music even under CC BY; the user is warned before someone else's track is used; about -14 LUFS with the peak below -1 dB.

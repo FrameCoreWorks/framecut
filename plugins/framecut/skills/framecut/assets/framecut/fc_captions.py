@@ -167,7 +167,10 @@ def ass_text(text):
 def ass_document(project, seq, delivery, projection):
     w, h = delivery["width"], delivery["height"]
     fps, cap = ratio(seq["fps"]), seq.get("captions", {})
-    size = round(h * cap.get("size", .055))
+    # Floor for phone-read video: below ~4.5% of the height (9:16) or 4% (landscape) captions are unreadable on a phone.
+    floor = .045 if h > w else .04
+    asked = cap.get("size", .055)
+    size = round(h * max(asked, floor))
     font = cap.get("font", "DejaVu Sans")
     bottom = max(cap.get("bottom", .18), delivery.get("safe_bottom", .15))
     header = f"""[Script Info]
@@ -184,6 +187,8 @@ Style: Text,{font},{size},&H00FFFFFF,&H00FFFFFF,&H00101010,&H80000000,-1,0,0,0,1
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
     lines, layout = [], []
+    if asked < floor and cap.get("enabled", False):
+        layout.append({"code": "caption_size_raised", "asked": asked, "used": floor})
     def emit(start, end, style, content, layer=0):
         if end > start:
             lines.append(f"Dialogue: {layer},{ass_time(start,fps)},{ass_time(end,fps)},{style},,0,0,0,,{content}")
