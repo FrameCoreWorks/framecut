@@ -2,6 +2,10 @@
 
 The plugin's own changes are in [plugins/framecut/CHANGELOG.md](plugins/framecut/CHANGELOG.md).
 
+## 2026-11-14
+
+- FrameCut 0.1.3: a fixed, owner-approved welcome on a bare invocation, with a byte-check test.
+
 ## 2026-11-13
 
 - FrameCut 0.1.2: caption size floor for phone-read films, Whisper base offered for non-English speech.

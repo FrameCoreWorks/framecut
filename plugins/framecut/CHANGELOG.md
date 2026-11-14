@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3 (2026-11-14)
+
+- **Fixed welcome on a bare invocation** (owner request and approval 2026-11-14): `skills/framecut/assets/startup-welcome.en.md` holds the approved English text (what FrameCut does, six capabilities, storyboard approval before the final render, three numbered examples, closing question; no link to another plugin). `SKILL.md` embeds the same text in a "Welcome" section: output it alone, copied exactly in English or translated in full, then ask the first missing standalone-brief question after the answer. `tests/welcome_test.py` checks the embedded copy is byte-identical to the asset.
+
 ## 0.1.2 (2026-11-13)
 
 - **Captions readable on a phone** (owner test 2026-11-13): the renderer keeps captions at least 4.5 % of the frame height in a vertical film and 4 % in a landscape one, and reports `caption_size_raised` when a sequence asked for less; the readability reference says to shorten or split a cue instead of shrinking it.

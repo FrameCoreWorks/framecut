@@ -17,7 +17,7 @@ from package import ROOT, PLUGIN, build, source_files
 
 CONTRACT_SHA = 'e7cc0f4e612395768e8c8c6cf2a033a555bc69b4c8ea5ca45c4db019a342897a'
 STUDIO_SKILLS = ('opencut-video-studio', 'caption-studio', 'hyperframes-workflow', 'remotion-video-production')
-FAST = ('captions_test.py', 'edit_export_test.py', 'framecut_editor_test.py', 'framecut_pixel_test.py')
+FAST = ('captions_test.py', 'welcome_test.py', 'edit_export_test.py', 'framecut_editor_test.py', 'framecut_pixel_test.py')
 COPIES = ('skills/framecut/assets/captions/render.py', 'skills/framecut/assets/board/board_compose.py')
 # Descriptions present FrameCut as a standalone plugin (owner decision 2026-11-12).
 NOT_IN_DESCRIPTIONS = re.compile(r'moved (out )?(of|from)|former(ly)? (a )?(module|part)|extracted from|split (out )?from', re.I)
