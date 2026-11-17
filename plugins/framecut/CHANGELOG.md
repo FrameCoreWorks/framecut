@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.4 (2026-11-17)
+
+- **Earshot through FrameMotion** (owner approval 2026-11-17 after the FrameMotion, Studio and FrameCut cooperation test of 2026-11-17): FrameMotion 0.3.0 bundles Earshot, but FrameCut said Earshot came only through Toolbox, so with FrameCut and FrameMotion and no Toolbox the sound work fell back to FrameCut's own mix. `SKILL.md` and the companion reference now use FrameMotion's bundled copy when Toolbox is absent; both copies share one engine in `~/.framecore-works/earshot`.
+- **Motion return formats**: the FrameMotion section asks for straight alpha as ProRes 4444 in a .mov and opaque pieces as H.264, because FrameCut reads no VP9 alpha (seen in the test: a VP9 WebM with alpha was ingested with `has_alpha: false`).
+
 ## 0.1.3 (2026-11-14)
 
 - **Fixed welcome on a bare invocation** (owner request and approval 2026-11-14): `skills/framecut/assets/startup-welcome.en.md` holds the approved English text (what FrameCut does, six capabilities, storyboard approval before the final render, three numbered examples, closing question; no link to another plugin). `SKILL.md` embeds the same text in a "Welcome" section: output it alone, copied exactly in English or translated in full, then ask the first missing standalone-brief question after the answer. `tests/welcome_test.py` checks the embedded copy is byte-identical to the asset.
