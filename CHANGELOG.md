@@ -4,6 +4,7 @@ The plugin's own changes are in [plugins/framecut/CHANGELOG.md](plugins/framecut
 
 ## 2026-11-17
 
+- FrameCut 0.1.6: the checkpoint records the current layer.
 - FrameCut 0.1.5: mandatory layered work (assembly to QC), one layer at a time with a check after each.
 
 ## 2026-11-14

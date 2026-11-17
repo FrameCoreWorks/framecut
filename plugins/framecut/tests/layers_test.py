@@ -18,6 +18,10 @@ class LayersTest(unittest.TestCase):
         self.assertIn('Work in layers (mandatory)', text)
         self.assertIn('references/layered-work.md', text)
 
+    def test_checkpoint_has_layer(self):
+        text = (SKILL / 'SKILL.md').read_text(encoding='utf-8')
+        self.assertIn('the current `layer`', text)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.6 (2026-11-17)
+
+- The workflow checkpoint field list in `SKILL.md` now includes the current `layer` that the layered-work reference already required (found in the Mac check of 0.1.5); test added.
+
 ## 0.1.5 (2026-11-17)
 
 - **Layered work** (owner rule 2026-11-17, mandatory): an edit is built one layer at a time (assembly, rough cut, fine cut, picture lock, sound, colour, captions, QC of the exported file) with a frame or listening check after each. A fix returns to its own layer and the layers above it are checked again; each layer is its own revision or pass; only a very short simple job may take one pass, with the reason in the plan. New `references/layered-work.md`, a short rule in `SKILL.md`, a pointer in the editor-craft stage table and `tests/layers_test.py`. Unverified in ChatGPT Work and Codex (NOT_RUN).

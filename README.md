@@ -2,7 +2,7 @@
 
 Video editing for **Claude, Codex and ChatGPT Work**, maintained by FrameCore Works. FrameCut turns your own footage into a finished, reviewed film: it asks what the film is for, analyses the material, transcribes speech, shows the whole film as a storyboard, then cuts, captions, mixes and renders it, and hands an editor EDL, OTIO and CSV files when you want to finish elsewhere.
 
-**Current plugin version: 0.1.5.** FrameCut is a complete standalone plugin: it needs no other plugin, starts with its own short brief and takes a film from the footage to the delivered MP4 with subtitle files. It also works as the editing companion of [FrameCore Works Creative Studio](https://github.com/FrameCoreWorks/framecore-works-creative-studio) when both are installed: then Studio keeps the brief, idea, copy, board acceptance and delivery, and FrameCut does the analysis, edit, captions, mix, render and QA. Plugins complement each other through the shared `framecore-task-result/1` contract also used by FrameMotion, Toolbox and Open Assets.
+**Current plugin version: 0.1.6.** FrameCut is a complete standalone plugin: it needs no other plugin, starts with its own short brief and takes a film from the footage to the delivered MP4 with subtitle files. It also works as the editing companion of [FrameCore Works Creative Studio](https://github.com/FrameCoreWorks/framecore-works-creative-studio) when both are installed: then Studio keeps the brief, idea, copy, board acceptance and delivery, and FrameCut does the analysis, edit, captions, mix, render and QA. Plugins complement each other through the shared `framecore-task-result/1` contract also used by FrameMotion, Toolbox and Open Assets.
 
 ## What it does
 
