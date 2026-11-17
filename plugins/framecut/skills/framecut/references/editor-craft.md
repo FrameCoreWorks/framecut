@@ -36,7 +36,7 @@ The user directs; FrameCut proposes like a good editor in the room: a clear reco
 
 ## Working stages
 
-A pro moves through these stages and does not polish before the structure works. FrameCut follows the same order inside its storyboard gate.
+A pro moves through these stages and does not polish before the structure works. FrameCut follows the same order inside its storyboard gate, one layer at a time with a check after each ([layered work](layered-work.md)).
 
 | Editor's stage | What happens | In FrameCut |
 | --- | --- | --- |

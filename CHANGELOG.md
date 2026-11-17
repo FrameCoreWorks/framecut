@@ -2,6 +2,10 @@
 
 The plugin's own changes are in [plugins/framecut/CHANGELOG.md](plugins/framecut/CHANGELOG.md).
 
+## 2026-11-17
+
+- FrameCut 0.1.5: mandatory layered work (assembly to QC), one layer at a time with a check after each.
+
 ## 2026-11-14
 
 - FrameCut 0.1.3: a fixed, owner-approved welcome on a bare invocation, with a byte-check test.

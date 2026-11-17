@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.5 (2026-11-17)
+
+- **Layered work** (owner rule 2026-11-17, mandatory): an edit is built one layer at a time (assembly, rough cut, fine cut, picture lock, sound, colour, captions, QC of the exported file) with a frame or listening check after each. A fix returns to its own layer and the layers above it are checked again; each layer is its own revision or pass; only a very short simple job may take one pass, with the reason in the plan. New `references/layered-work.md`, a short rule in `SKILL.md`, a pointer in the editor-craft stage table and `tests/layers_test.py`. Unverified in ChatGPT Work and Codex (NOT_RUN).
+
 ## 0.1.4 (2026-11-17)
 
 - **Earshot through FrameMotion** (owner approval 2026-11-17 after the FrameMotion, Studio and FrameCut cooperation test of 2026-11-17): FrameMotion 0.3.0 bundles Earshot, but FrameCut said Earshot came only through Toolbox, so with FrameCut and FrameMotion and no Toolbox the sound work fell back to FrameCut's own mix. `SKILL.md` and the companion reference now use FrameMotion's bundled copy when Toolbox is absent; both copies share one engine in `~/.framecore-works/earshot`.
