@@ -33,7 +33,7 @@ Chapters: 00:00 names the hook's topic, not "Intro"; every chapter at least 10 s
 
 1. **Last content beat.** The final tip, reveal or result. Do not announce the end ("that's all for today") before it (inference: viewers leave on an announced ending).
 2. **Bridge, 2 to 4 s.** One spoken line naming the next video and why it follows; this is the cut where the outro begins.
-3. **End-screen window, 15 to 20 s** (minimum 5 s). Keep the picture simple: the speaker in the left two thirds, a quiet b-roll or FrameMotion's end-screen background. Nothing important where YouTube draws its elements (right side and lower centre; measured element sizes on 1920 x 1080: video boxes 620 x 349 to 862 x 485, subscribe circle 296 x 296, per [Mark Studios](https://www.markstudios.com/tools/youtube-end-screen-template)).
+3. **End-screen window, 15 to 20 s** (minimum 5 s). Keep the picture simple: the speaker, a quiet b-roll or FrameMotion's end-screen background. Nothing important where YouTube will draw its elements: plan the slot boxes first and keep the speaker clear of them (FrameMotion's outro layouts leave the upper left free; measured element sizes on 1920 x 1080: video boxes 620 x 349 to 862 x 485, subscribe circle 296 x 296, per [Mark Studios](https://www.markstudios.com/tools/youtube-end-screen-template)).
 4. **Out.** Music resolves or a 1 to 2 s logo bumper; no dead air, no long black.
 
 Cards belong earlier in the video, at the moment the related topic comes up; a card inside the end-screen window loses its teaser.
@@ -42,7 +42,7 @@ Cards belong earlier in the video, at the moment the related topic comes up; a c
 
 - J-cut the first word of the content under the sting's tail only when the sting has no voice of its own; otherwise leave the 0.2 s gap.
 - Keep a sting's short-term loudness within about 2 LU of the speech around it (inference; measure on the exported file).
-- Under the end-screen window, keep speech or a music bed about 15 to 20 dB under dialogue level if both play; the outro must not jump in level.
+- Under the end-screen window, keep a music bed about 15 to 20 dB under the speech when both play; the outro must not jump in level.
 - Whole video about -14 LUFS integrated, true peak at or below -1 dBTP, measured on the delivered file ([editor craft](editor-craft.md#sound-for-editors)).
 
 ## Shorts

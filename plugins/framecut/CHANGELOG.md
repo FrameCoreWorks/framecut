@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.9 (2026-11-18)
+
+- **YouTube outro fixes** (owner review of the day's work, 2026-11-18): the end-screen window no longer puts the speaker in the left two thirds, which collides with FrameMotion's subscribe circle in the lower left; the speaker stays clear of the planned slot boxes. The music-under-speech line now reads "a music bed about 15 to 20 dB under the speech", matching [editor craft](skills/framecut/references/editor-craft.md#sound-for-editors).
+
 ## 0.1.8 (2026-11-18)
 
 - **Mixed-source footage** (owner request 2026-11-18, together with FrameMotion 0.4.6). New `references/mixed-source-footage.md` and one SKILL.md bullet: the ingest probe and what each field means (variable frame rate from phones, HLG or PQ HDR, untagged colour, rotation, 48 kHz), conform recipes (constant frame rate with Rec.709 tags, HDR to SDR tone-mapping, 9:16 reframe), choosing the timeline rate with 24 fps AI clips, stabilising client footage, cutting AI clips at their clean range and hiding the drift point, the talking-head layout with FrameMotion pieces, lip-sync limits (ITU-R BT.1359, EBU R37) and ducking, the map onto the eight editing layers and common editing mistakes. The compositing core is FrameMotion's `mixed-media-compositing.md`, linked rather than repeated.
