@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.8 (2026-11-18)
+
+- **Mixed-source footage** (owner request 2026-11-18, together with FrameMotion 0.4.6). New `references/mixed-source-footage.md` and one SKILL.md bullet: the ingest probe and what each field means (variable frame rate from phones, HLG or PQ HDR, untagged colour, rotation, 48 kHz), conform recipes (constant frame rate with Rec.709 tags, HDR to SDR tone-mapping, 9:16 reframe), choosing the timeline rate with 24 fps AI clips, stabilising client footage, cutting AI clips at their clean range and hiding the drift point, the talking-head layout with FrameMotion pieces, lip-sync limits (ITU-R BT.1359, EBU R37) and ducking, the map onto the eight editing layers and common editing mistakes. The compositing core is FrameMotion's `mixed-media-compositing.md`, linked rather than repeated.
+- Evidence: the commands ran on synthetic clips with FFmpeg 6.1 in the Claude cloud sandbox; real client footage `NOT_RUN`; Codex and ChatGPT Work untested by policy.
+
 ## 0.1.7 (2026-11-18)
 
 - **YouTube intro and outro in the edit** (owner request 2026-11-18, with FrameMotion 0.4.5): new `references/youtube-intro-outro-edit.md` and one SKILL.md paragraph: hook or cold open first (5 to 15 s, no logo or black frame), a 1.5 to 3 s title sting or none, chapters starting at the hook, the ending order (last content beat, a 2 to 4 s bridge naming the next video, a 15 to 20 s end-screen window with the element areas left clear), sound at the joins, Shorts loop endings and the layer each decision belongs to. Platform facts link to YouTube Help; measured numbers and inferences are labelled. The stings and end-screen graphics are built in FrameMotion.
