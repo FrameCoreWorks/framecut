@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.7 (2026-11-18)
+
+- **YouTube intro and outro in the edit** (owner request 2026-11-18, with FrameMotion 0.4.5): new `references/youtube-intro-outro-edit.md` and one SKILL.md paragraph: hook or cold open first (5 to 15 s, no logo or black frame), a 1.5 to 3 s title sting or none, chapters starting at the hook, the ending order (last content beat, a 2 to 4 s bridge naming the next video, a 15 to 20 s end-screen window with the element areas left clear), sound at the joins, Shorts loop endings and the layer each decision belongs to. Platform facts link to YouTube Help; measured numbers and inferences are labelled. The stings and end-screen graphics are built in FrameMotion.
+- Evidence: `python3 tools/check.py` PASS in the Claude cloud sandbox; editing behaviour on real footage `NOT_RUN`; Codex and ChatGPT Work not tested by policy.
+
 ## 0.1.6 (2026-11-17)
 
 - The workflow checkpoint field list in `SKILL.md` now includes the current `layer` that the layered-work reference already required (found in the Mac check of 0.1.5); test added.

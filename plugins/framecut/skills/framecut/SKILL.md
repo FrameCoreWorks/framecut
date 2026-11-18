@@ -56,6 +56,8 @@ With Studio, read its integration authority (Creative Studio: `skills/pipeline-c
 
 **Think like an editor.** Before the storyboard, at every join and in the final review, decide as an experienced Resolve or Premiere editor would, following [editor craft](references/editor-craft.md): Murch's priorities (emotion, story, rhythm, eye-trace, screen plane, space), a reason for every cut, the hook first, rhythm by variation, J/L cuts, a hard cut unless a transition means something, dialogue first in the mix with music well under it, correct before grading, QC on the exported file. Answer in the editor's terms the user uses and map them to FrameCut operations (`plan-cuts` for dead air, `beats` for cutting to music, `transition_style` for dips, wipes and slides). Say plainly what FrameCut cannot do here.
 
+**YouTube openings and endings.** For a YouTube video, cut the hook first (5 to 15 s, no logo or black frame), a 1.5 to 3 s title sting or none after it, and leave a 15 to 20 s end-screen window (at least 5 s, in a video of at least 25 s) with nothing important where YouTube draws its elements; Shorts get no intro and a loop ending. Follow [YouTube intro and outro in the edit](references/youtube-intro-outro-edit.md); the stings and end-screen graphics come from FrameMotion.
+
 **Work in layers (mandatory).** One layer at a time, each checked on frames or by ear before the next: assembly, rough cut, fine cut, picture lock, sound, colour, captions, QC of the exported file. A fix returns to its own layer and the layers above it are checked again; keep each layer a separate revision or pass. Only a very short simple job may take one pass, with the reason written in the plan. Details: [layered work](references/layered-work.md).
 
 ## Adaptive intake
