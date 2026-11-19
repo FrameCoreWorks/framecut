@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.10 (2026-11-19)
+
+- **Ready motion assets through FrameMotion** (owner request 2026-11-19): one sentence in `references/companion-plugins.md` ("FrameMotion inside an edit") sends a request for a ready transition, lower third, grain or light-leak overlay or caption look to FrameMotion, which searches the HyperFrames registry first (FrameMotion 0.4.8, `ready-made-motion-assets.md`). FrameCut installs nothing itself. No new skill, no new dependency.
+- Evidence: `tools/check.py` result in the pull request; Codex and ChatGPT Work `NOT_TESTED (by policy)`.
+
 ## 0.1.9 (2026-11-18)
 
 - **YouTube outro fixes** (owner review of the day's work, 2026-11-18): the end-screen window no longer puts the speaker in the left two thirds, which collides with FrameMotion's subscribe circle in the lower left; the speaker stays clear of the planned slot boxes. The music-under-speech line now reads "a music bed about 15 to 20 dB under the speech", matching [editor craft](skills/framecut/references/editor-craft.md#sound-for-editors).
