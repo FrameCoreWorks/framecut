@@ -23,7 +23,7 @@ Each layer is a pass of its own, recorded in the project checkpoint as `layer` n
 - **A fix goes back to its own layer.** A wrong cut is a layer 3 fix, not a caption trick. After the fix, check the layers above it again, because timing changes move captions, sound and motion returns.
 - **Do not mix layers.** No colour while the timing still changes, no sound mix on a scene whose cut is open, no captions before picture lock. A change to a lower layer after the upper ones are done is expensive: plan it early.
 - **One layer per revision.** Make each layer its own `apply` revision (or its own `render` pass), so it can be undone or switched off and the layer below inspected without it. A render that carries all layers at once is for the final file only.
-- **Motion pieces** from FrameMotion are built in their own layers (plan, type, motion, depth, colour, sound, QC). Ask for the piece after its plan is agreed and attach it at layer 3 or later, never as a way to hide a weak cut.
+- **Motion pieces** from FrameMotion are built in their own layers (plan, type, motion, depth, colour, sound, QC). Ask for the piece after its plan is agreed and attach it at layer 3 or later, never as a way to hide a weak cut. A reel made mostly of motion follows FrameMotion's reel workflow, music before the cut ([FrameMotion inside an edit](companion-plugins.md#framemotion-inside-an-edit)).
 - **Exception.** A very short, simple job (one trim, one caption fix, one format change) may run its layers in one pass. Write the reason into the plan or the board note.
 
 Related: [editor craft](editor-craft.md#working-stages), [storyboard gate](../SKILL.md#storyboard-before-final-rendering).
