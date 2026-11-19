@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.11 (2026-11-19)
+
+- **Link to FrameMotion's reel workflow, version 2** (owner messages 2026-11-19). `references/companion-plugins.md`: a reel built mostly from designed motion follows FrameMotion's five-stage workflow (music composed to firm times before the cut, contact sheet on the beats as the picture lock, 540p preview, render on request, quality loop); when it also uses footage, FrameCut cuts the footage to the accepted music grid and a change of scene length goes back to the music stage. The music note names FrameMotion's real CC0 instruments. One sentence in `references/layered-work.md`. No behaviour change in FrameCut's own tools.
+- Evidence: `python3 tools/check.py` on the Mac. Codex and ChatGPT Work `NOT_TESTED (by policy)`.
+
 ## 0.1.10 (2026-11-19)
 
 - **Ready motion assets through FrameMotion** (owner request 2026-11-19): one sentence in `references/companion-plugins.md` ("FrameMotion inside an edit") sends a request for a ready transition, lower third, grain or light-leak overlay or caption look to FrameMotion, which searches the HyperFrames registry first (FrameMotion 0.4.8, `ready-made-motion-assets.md`). FrameCut installs nothing itself. No new skill, no new dependency.
