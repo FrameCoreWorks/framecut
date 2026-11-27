@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "framecut",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "Video editing from your footage to a finished film: analysis, transcription, cuts, captions and subtitles, mix, storyboard and render, with EDL/OTIO handoff. Works standalone or as Creative Studio's editing companion.",
   "author": {
     "name": "FrameCore Works"
