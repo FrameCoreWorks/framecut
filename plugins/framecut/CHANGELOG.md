@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.14 (2026-11-27)
+
+- **Rebuilding a client's reel 1:1 from a reference** (owner's client handover 2026-11-27). New `references/reference-reel-rebuild.md`: free breakdown (ffprobe, `scdet` cut list, stills, Whisper dialogue table, natural translation), start frames and reference-to-video clips one at a time, voices fitted to the mouth, mix to -14 LUFS with a fixed gain, the edit on the reference's cut times, per-shot RIFE (job used rife-v4.6; Toolbox defaults to the TNTwise fork's rife-v4.26), watermarked 540p preview, costs and checklist. Limits stated: client's rights, own or fictional characters, no real likeness or copied logos, soundtrack licence and Content ID warning, each paid step after a yes with its cost, no patching of a finished clip. The owner's scripts (`fit3.py`, `eq_match.py`, `rife-v6.sh`, `montaz-vN.py`) are not in the repository; the page describes their steps. One SKILL.md bullet routes to it.
+- Evidence: `python3 tools/check.py` in the Claude cloud sandbox; the process itself `PASS_REPORTED` by the owner, FrameCut's run of it `NOT_RUN`; Codex and ChatGPT Work `NOT_TESTED (by policy)`.
+
 ## 0.1.13 (2026-11-27)
 
 - **RIFE in the cloud and rules from real use** (the owner's cloud handover 2026-11-27, together with Toolbox 1.18.1). "Smoothing and slow motion" in `references/companion-plugins.md` adds: one shot per run, captions and watermarks after interpolation, the original sound unchanged, `-nostdin` in scripted shot loops, a v4 model for 24 to 60 fps, and the cloud path (Mesa's software Vulkan driver after a yes, CPU timings, prefer the Mac or a preview) with `minterpolate` as the faster, weaker fallback.
