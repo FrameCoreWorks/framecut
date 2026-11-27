@@ -13,6 +13,22 @@ The rebuild runs the usual [layered work](layered-work.md): breakdown and dialog
 - **A finished generated clip is not patched** (no masks or picture overlays over a defect). A defect means a new generation, after the user's yes. Replacing a clip's sound is allowed.
 - **No new shots.** Do not invent framings the reference does not have; a deviation from these rules needs the user's yes.
 
+## Choosing the route (before any paid step)
+
+Added from the handover's section 13 (2026-11-27; its section 12, which introduces Recast, was not received). Prices are fal list prices seen on 2026-11-27.
+
+| What changes | Route | Cost seen |
+| --- | --- | --- |
+| Only the person; the reference's sound stays | **Recast** (person swap on the reference video, cuts and motion kept 1:1) | about USD 0.05 per second (unit assumed, see below) |
+| The person and a new target-language dialogue | **Recast**, then a voice (section 4), then video-to-video lip-sync; test one shot first | see lip-sync below |
+| Scenery, props or framings | **Start frames and clips** (sections 2 and 3; Seedream 5.5 edit at about USD 0.03 per frame is a cheaper frame model than the one above) | see costs |
+
+- **Recast takes no audio.** Inputs: the video, up to 4 photos of the people, a prompt, 768p or 1080p, `enhance_realism`. It always returns the original sound. Prompt: empty or one plain sentence ("Replace the person on the left with reference 1"), never an elaborate one.
+- **Lip-sync on fal** (2026-11-27): HeyGen v3 precision USD 0.10/s, sync-3 USD 8/min, Sync 2 Pro USD 5/min, VEED lipsync v2 USD 0.07 per unit, LatentSync USD 0.005/s (the weakest).
+- **VEED dubbing pro** (USD 0.18/s) clones the original speaker's voice: never on someone else's footage or a celebrity's; use it only for a voice the client owns.
+- **23 s, 16 shots, no retakes:** A) Seedream 5.5 edit + reference-to-video clips + ElevenLabs ≈ 0.06 + 0.48 + 1.60 + 0.25 ≈ USD 2.40. B) Recast + ElevenLabs + HeyGen lip-sync ≈ 0.06 + 1.15 + 0.25 + lip-sync ≈ USD 3.75 (lip-sync on the whole reel) or ≈ USD 2.95 (only the shots with speech). With retakes both come to about USD 3 to 4: A usually needs 30 to 50 % clip retakes and frame fixes (props, captions, continuity); B needs almost none, since set, props and motion come from the original. B means far less work and fewer approval rounds at a similar cost.
+- **Unconfirmed:** Recast's price unit (a second was assumed) and lip-sync on cartoon-style 3D faces. A 5 s test costs about USD 1 and runs only after the user's yes.
+
 ## 1. Break the reference down (free)
 
 1. Ask for the MP4 file itself; links to Instagram and similar sites need a login and fail.
