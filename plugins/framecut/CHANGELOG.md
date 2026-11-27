@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.13 (2026-11-27)
+
+- **RIFE in the cloud and rules from real use** (the owner's cloud handover 2026-11-27, together with Toolbox 1.18.1). "Smoothing and slow motion" in `references/companion-plugins.md` adds: one shot per run, captions and watermarks after interpolation, the original sound unchanged, `-nostdin` in scripted shot loops, a v4 model for 24 to 60 fps, and the cloud path (Mesa's software Vulkan driver after a yes, CPU timings, prefer the Mac or a preview) with `minterpolate` as the faster, weaker fallback.
+- Evidence: `python3 tools/check.py` in the Claude cloud sandbox; the cloud run is recorded in Toolbox 1.18.1. Mac run `NOT_RUN`; Codex and ChatGPT Work `NOT_TESTED (by policy)`.
+
 ## 0.1.12 (2026-11-27)
 
 - **Slow motion and smoother footage with RIFE** (owner request 2026-11-27, together with Toolbox 1.18.0). `references/companion-plugins.md` gains a row and the section "Smoothing and slow motion": with Toolbox's `rife-interpolate` (RIFE frame interpolation, pinned TNTwise/rife-ncnn-vulkan release 20250112) FrameCut interpolates one trimmed shot in the fine cut, binds the result as a new source, and checks the frames with its `sheet` strip; without it `speed` and `fps` repeat frames and FrameCut offers the plugin once. One SKILL.md bullet; `editor-craft.md`, `mixed-source-footage.md` and the first-setup list point to it. Nothing is downloaded without the user's yes.
