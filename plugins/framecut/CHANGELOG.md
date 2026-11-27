@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.15 (2026-11-27)
+
+- **Choosing the route for a 1:1 rebuild** (owner's handover section 13, 2026-11-27). `references/reference-reel-rebuild.md` gains "Choosing the route": Recast (person swap, no audio input, original sound returned) for a person-only change; Recast, a voice and video-to-video lip-sync for a new dialogue; start frames and clips for new scenery or props. Lip-sync prices on fal dated 2026-11-27, cost comparison A/B for 16 shots, a warning that VEED dubbing clones the original voice (never on someone else's or a celebrity's footage). Recast's price unit and lip-sync on cartoon 3D faces stay unconfirmed; a test only after the user's yes.
+- Evidence: `python3 tools/check.py` in the Claude cloud sandbox; FrameCut's run `NOT_RUN`; Codex and ChatGPT Work `NOT_TESTED (by policy)`.
+
 ## 0.1.14 (2026-11-27)
 
 - **Rebuilding a client's reel 1:1 from a reference** (owner's client handover 2026-11-27). New `references/reference-reel-rebuild.md`: free breakdown (ffprobe, `scdet` cut list, stills, Whisper dialogue table, natural translation), start frames and reference-to-video clips one at a time, voices fitted to the mouth, mix to -14 LUFS with a fixed gain, the edit on the reference's cut times, per-shot RIFE (job used rife-v4.6; Toolbox defaults to the TNTwise fork's rife-v4.26), watermarked 540p preview, costs and checklist. Limits stated: client's rights, own or fictional characters, no real likeness or copied logos, soundtrack licence and Content ID warning, each paid step after a yes with its cost, no patching of a finished clip. The owner's scripts (`fit3.py`, `eq_match.py`, `rife-v6.sh`, `montaz-vN.py`) are not in the repository; the page describes their steps. One SKILL.md bullet routes to it.
