@@ -213,7 +213,7 @@ FrameCut's picture effects (`brightness`, `contrast`, `saturation`, `blur`, `vig
 Say so plainly and offer the route that exists, instead of approximating silently:
 
 - **Subject-tracked reframing** (Smart Reframe, Auto Reframe), stabilisation, rotoscoping and Magic Mask, multicam and waveform sync: not available. Per-deliverable crops and keyed pans can follow a subject by hand on the storyboard.
-- **Optical-flow slow motion** (Speed Warp, Optical Flow): not available; speed changes repeat or skip frames. Pitch: constant speed keeps the voice's pitch; a speed curve shifts pitch with speed, so lay the voice as an independent event when it must stay natural.
+- **Optical-flow slow motion** (Speed Warp, Optical Flow): with Toolbox's `rife-interpolate`, per shot in the fine cut ([smoothing and slow motion](companion-plugins.md#smoothing-and-slow-motion)); without it speed changes repeat or skip frames. Pitch: constant speed keeps the voice's pitch; a speed curve shifts pitch with speed, so lay the voice as an independent event when it must stay natural.
 - **Colour pipeline** (LUTs, curves, wheels, qualifiers, scopes, log transforms): not available; see [colour](#colour-for-editors).
 - **Voice isolation, dialogue levelling, compression and de-essing:** use the high-pass, low-pass and denoise effects, or Earshot through Toolbox for analysis.
 - **Downbeat and bar detection:** `beats` gives the pulse only.

@@ -6,7 +6,8 @@ FrameCut needs no other plugin. The plugins below add a step it does better with
 | --- | --- | --- | --- |
 | Animated titles, kinetic type, a logo ending, data animation inside the edit | native keyframes, animated titles and word-timed captions | FrameMotion (`framemotion:framemotion`) | designed motion rendered at the exact length and placed once on FrameCut's timeline |
 | Sound effects on cuts, loudness check, sound kits | FrameCut's mix, ducking and loudness targets | Earshot, built into FrameCore Works Toolbox (also bundled in FrameMotion) | effects chosen by listening and measured loudness and peaks ([Earshot through Toolbox](#earshot-through-toolbox)) |
-| A designed transition that the cut really needs | `transition_style` (dips, wipes, slides) and crossfades | `gl-transitions` from Toolbox | licensed GLSL shader transitions with exact FFmpeg wiring |
+| A designed transition that the cut really needs | `transition_style` (dips, wipes, slides) and crossfades | FrameMotion (its `gl-transitions` shaders) | licensed GLSL shader transitions with exact FFmpeg wiring |
+| Slow motion from normal footage, smoother playback (24 or 30 to 60 fps), a clip at another frame rate | `speed` and `fps`, which repeat or skip frames | `rife-interpolate` from Toolbox | new in-between frames from RIFE frame interpolation on the graphics card ([smoothing and slow motion](#smoothing-and-slow-motion)) |
 | Missing stills, b-roll pictures, ambience or sound effects (music: see below) | the user's own material | FrameCore Open Assets (`framecore-open-assets:open-assets`) | free files with verified licences and provenance ([Open Assets](#open-assets)) |
 | Brief, script, copy, campaign or storyboard work around the edit | the [standalone brief](standalone-brief.md) | FrameCore Works Creative Studio | Studio leads the project and sends FrameCut the edit |
 
@@ -26,6 +27,17 @@ Each repository's own installation guide is the authority when it differs: [Fram
 ## Earshot through Toolbox
 
 Earshot (sound analysis, procedural effects, sound kits and its bank) comes through FrameCore Works Toolbox or through the copy bundled in FrameMotion (since FrameMotion 0.3.0): there is no separate Earshot plugin, and both copies share one engine in `~/.framecore-works/earshot`, so it is installed once. With `toolbox:toolbox` readable and code running, read its Earshot reference and run its launcher `capabilities/earshot/scripts/runtime.py status --json` from the Toolbox plugin folder; a task goes through `capabilities/earshot/scripts/envelope.py` with the same FrameCut revision, rational FPS and source/local/master mapping, and comes back as a `framecore-task-result/1` ([shared contract](../../../contracts/framecore-task.schema.json)). Return its audio files and measured evidence to the existing master timeline. When the engine is missing, relay Toolbox's own tier question (full about 2.6 GB, light about 470 MB, or not now) and install nothing before the answer. Without Toolbox but with `framemotion:framemotion` readable, run the same `runtime.py status --json` and `envelope.py` from FrameMotion's `skills/framemotion/assets/earshot/scripts/` with the same task, and relay its tier question the same way. Without either, offer Toolbox once as above and meanwhile use FrameCut's own mix and loudness targets, and name the engine that actually ran. Local only: no audio upload to any model service.
+
+## Smoothing and slow motion
+
+FrameCut's own `speed` and `fps` repeat or skip frames, so slow motion stutters and a 24 fps clip in a 30 or 60 fps edit judders on pans. Toolbox's `rife-interpolate` (RIFE, pinned TNTwise/rife-ncnn-vulkan release) makes real in-between frames. With `rife-interpolate:rife-interpolate` in the skill list, read that skill and run its launcher `skills/rife-interpolate/scripts/rife.py` from the plugin folder: `status`, then `plan` and the user's yes before the one-time download (about 830 MB, about 45 MB kept outside the project), then `run`.
+
+- **Where in the layers.** Interpolate in the fine cut, on the trimmed source range of one shot (no cut inside it, a little handle on both ends), and bind the result as a new source for that event; never interpolate a whole sequence or across a cut, which makes a ghost frame. A changed trim makes a new run.
+- **Slow motion:** `run SHOT.mp4 OUT.mp4 --factor 2` (or 4) `--slowmo` keeps the timeline rate, so the event lasts two or four times longer; its own sound is dropped, so lay sound separately. **Smoother or another rate:** `--fps` with the timeline rate (for example 24 to 30 or 60) keeps the duration and copies the sound.
+- **Check frames.** Make `sheet OUT.mp4 SHEET.png --at SECONDS` at the fastest motion, faces and hands, and any text, and look at it before the next layer. Warping or ghosting: use a lower factor, a shorter range or the plain `speed` there, and say so in the review.
+- **Not for:** footage with heavy motion blur or flashes, screen recordings with small text, and AI-generated clips (warping grows); designed motion is rendered again at the timeline rate by FrameMotion instead.
+
+Without the plugin, keep FrameCut's `speed` and `fps`, say that slow motion will repeat frames, and offer `rife-interpolate` from Toolbox once ([names and installation](#names-and-installation); entry id `rife-interpolate@framecore-works-toolbox`). ffmpeg's `minterpolate` is a last resort for faces and hands.
 
 ## Open Assets
 
