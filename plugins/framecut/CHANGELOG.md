@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.12 (2026-11-27)
+
+- **Slow motion and smoother footage with RIFE** (owner request 2026-11-27, together with Toolbox 1.18.0). `references/companion-plugins.md` gains a row and the section "Smoothing and slow motion": with Toolbox's `rife-interpolate` (RIFE frame interpolation, pinned TNTwise/rife-ncnn-vulkan release 20250112) FrameCut interpolates one trimmed shot in the fine cut, binds the result as a new source, and checks the frames with its `sheet` strip; without it `speed` and `fps` repeat frames and FrameCut offers the plugin once. One SKILL.md bullet; `editor-craft.md`, `mixed-source-footage.md` and the first-setup list point to it. Nothing is downloaded without the user's yes.
+- **Fix:** the shader-transition row and the first-setup list named `gl-transitions` from Toolbox, which Toolbox removed in 1.16.0; they now point to FrameMotion, which bundles it.
+- Evidence: `python3 tools/check.py` in the Claude cloud sandbox. A RIFE run on footage on the Mac `NOT_RUN` at release time; Codex and ChatGPT Work `NOT_TESTED (by policy)`.
+
 ## 0.1.11 (2026-11-19)
 
 - **Link to FrameMotion's reel workflow, version 2** (owner messages 2026-11-19). `references/companion-plugins.md`: a reel built mostly from designed motion follows FrameMotion's five-stage workflow (music composed to firm times before the cut, contact sheet on the beats as the picture lock, 540p preview, render on request, quality loop); when it also uses footage, FrameCut cuts the footage to the accepted music grid and a change of scene length goes back to the music stage. The music note names FrameMotion's real CC0 instruments. One sentence in `references/layered-work.md`. No behaviour change in FrameCut's own tools.

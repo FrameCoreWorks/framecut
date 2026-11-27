@@ -23,8 +23,8 @@ The picked numbers are the consent for those items only. Never install anything 
 
 ## The list
 
-1. **FrameMotion**: designed motion inside the edit (animated titles, kinetic type, data animation, logo endings) rendered and placed on FrameCut's timeline.
-2. **FrameCore Works Toolbox**: Earshot for sound (effects placed on the cuts, sound kits, loudness check before delivery), and `gl-transitions` (licensed shader transitions) when a cut really needs a designed transition.
+1. **FrameMotion**: designed motion inside the edit (animated titles, kinetic type, data animation, logo endings, shader transitions) rendered and placed on FrameCut's timeline.
+2. **FrameCore Works Toolbox**: Earshot for sound (effects placed on the cuts, sound kits, loudness check before delivery), and `rife-interpolate` for smooth slow motion and frame-rate changes of footage (RIFE, downloads its program once after your yes).
 3. **FrameCore Open Assets**: free stills, b-roll pictures, music, ambience and sound effects with verified licences and provenance.
 4. **FrameCore Works Creative Studio**: briefs, scripts, copy, storyboards, campaigns and prompts around the edit; with it, Studio leads the project and FrameCut edits.
 

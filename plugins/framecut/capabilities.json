@@ -2,7 +2,7 @@
   "schema": "framecore-capabilities/1",
   "plugin": {
     "name": "framecut",
-    "version": "0.1.11"
+    "version": "0.1.12"
   },
   "entry_skill": "skills/framecut/SKILL.md",
   "contract_versions": [
